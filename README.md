@@ -10,7 +10,7 @@ Prior to making this repository I put the analysis for two other blogs in other 
 
 
 ## Blogs 
-1. [MaxDiff Estimates of Candidate Support by Demographic Group](tbd). [Code](MaxDiff_Candidates)
+1. [MaxDiff Estimates of Candidate Support by Demographic Group](https://www.dataforprogress.org/blog/2019/6/17/a-better-measure-of-candidate-support-by-demographic-groups). [Code](MaxDiff_Candidates)
 2. [6 Apparent Political Clusters](https://wthh.dataforprogress.org/blog/2018/11/25/the-six-apparent-political-clusters). [Code](WTHH_Classes)
 
 ## Packages used (generally)
