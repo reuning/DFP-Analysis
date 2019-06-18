@@ -159,12 +159,14 @@ png("ideo.png", height=8, width=6, units="in", res=200)
 ggplot(ideo, aes(x=Cand, y=mid, group=Ideo, color=Ideo, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support by Ideology") + 
-  theme_dfp() + scale_color_manual("Ideology", 
+  # theme_dfp() + 
+  scale_color_manual("Ideology", 
                                    c("Very Liberal","Liberal", "Moderate",
                                      "Cons", "Other"), 
                                    values=rev(c("#0A2645","#79A5C6","#b3b3b3",
                                             "#F75757","springgreen4")))  +
-  ggtitle_dfp("Candidate Support by Ideology")
+  # ggtitle_dfp("Candidate Support by Ideology") + 
+  NULL
 
 dev.off()
 
@@ -191,12 +193,14 @@ png("educ.png", height=8, width=6, units="in", res=200)
 ggplot(educ, aes(x=Cand, y=mid, group=educ, color=educ, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support") + 
-  theme_dfp() + scale_color_manual("Education", 
+  # theme_dfp() + 
+  scale_color_manual("Education", 
                                    rev(c("High School or Less", "Some College", 
                                          "College", "Post Graduate")), 
                                    values=c("#0A2645","#79A5C6","#b3b3b3",
                                             "#F75757"))  +
-  ggtitle_dfp("Candidate Support by Education")
+  # ggtitle_dfp("Candidate Support by Education") +
+  NULL 
 dev.off()
 
 
@@ -221,10 +225,12 @@ png("gender.png", height=8, width=6, units="in", res=200)
 ggplot(gender, aes(x=Cand, y=mid, group=gender, color=gender, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support") + 
-  theme_dfp() + scale_color_manual("Sex", 
+  # theme_dfp() + 
+  scale_color_manual("Sex", 
                                    (c("Female", "Male")), 
                                    values=c("springgreen4",  "darkgoldenrod2"))  +
-  ggtitle_dfp("Candidate Support by Sex")
+  ggtitle_dfp("Candidate Support by Sex") + 
+  # NULL 
 dev.off()
 
 
@@ -256,13 +262,15 @@ png("inco.png", height=8, width=6, units="in", res=200)
 ggplot(inco, aes(x=Cand, y=mid, group=inco, color=inco, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support by Income") + 
-  theme_dfp() + scale_color_manual("Household\nIncome", 
+  # theme_dfp() + 
+  scale_color_manual("Household\nIncome", 
                                    rev(c("Less Than $30,000","$30,000 - $59,999",
                                           "$60,000 - $99,999","$100,000 - $149,999",
                                           "$150,000+","Prefer not to say")),
                                    values=c("#0A2645","#79A5C6","#b3b3b3","#F75757","#B71D1A", 
                                             "springgreen4"))  +
-  ggtitle_dfp("Candidate Support by Income")
+  # ggtitle_dfp("Candidate Support by Income") + 
+  NULL
 
 dev.off()
 
@@ -291,10 +299,12 @@ png("age.png", height=8, width=6, units="in", res=200)
 ggplot(age, aes(x=Cand, y=mid, group=age, color=age, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support") + 
-  theme_dfp() + scale_color_manual("Age", 
+  # theme_dfp() + 
+  scale_color_manual("Age", 
                                    rev(c("18-29", "30-44", "45-54", "55-64", "65+")),
                                    values=c("#0A2645","#79A5C6","#b3b3b3","#F75757","#B71D1A")) +
-  ggtitle_dfp("Candidate Support by Age")
+  # ggtitle_dfp("Candidate Support by Age") + 
+  NULL
 
 dev.off()
 
@@ -326,10 +336,12 @@ png("race.png", height=8, width=6, units="in", res=200)
 ggplot(race, aes(x=Cand, y=mid, group=race, color=race, ymin=lo, ymax=hi)) + 
   geom_pointrange(position = position_dodge2(width=.5)) +
   coord_flip() +  labs(x="", y="Latent Support") + 
-  theme_dfp() + scale_color_manual("Race", 
+  # theme_dfp() + 
+  scale_color_manual("Race", 
                                    rev(c("White", "Black", "Hispanic (non-White)")),
                                    values=c("#0A2645","#b3b3b3","#B71D1A")) +
-  ggtitle_dfp("Candidate Support by Race")
+  # ggtitle_dfp("Candidate Support by Race") + 
+  NULL
 dev.off()
 
 
