@@ -4,7 +4,7 @@ setwd(here::here("MaxDiff_Candidates"))
 library(rstan)
 library(ggplot2)
 
-df <- read.csv("YGRV_Omni_May_A_DFP.csv")
+df <- read.csv("http://filesforprogress.org/datasets/may_19_omni/data.csv")
 
 key <- c("CHOICE20_MD1_1"="Julián Castro","CHOICE20_MD1_2"="Stacey Abrams",
 "CHOICE20_MD1_3"="Seth Moulton","CHOICE20_MD1_4"="Mike Gravel",
