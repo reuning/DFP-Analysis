@@ -16,6 +16,7 @@ cands <- c("Joe Biden", "Bernie Sanders", "Kamala Harris", "Beto O’Rourke", "C
 
 # sub_df <- df[df$primaryvote %in% c(1,2,3,4,5) & df$partyvote==1,]
 sub_df <- df[df$primaryvote %in% c(1,2,3) & df$partyvote==1,]
+nrow(sub_df)
 
 
 issues <- unique(unlist(lapply(strsplit(grep( "issuemulti", names(df), value=T), "_"), function(x) x[2])))
