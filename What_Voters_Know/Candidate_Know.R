@@ -5,7 +5,7 @@ setwd(here::here("WTHH_Classes"))
 
 
 df <- read.csv("http://filesforprogress.org/datasets/june_19_omni/dfp_RV_omni_062019.csv")
-cands <- c("Joe Biden", "Bernie Sanders", "Kamala Harris", "Beto O’Rourke", "Cory Booker",
+cands <- c("Joe Biden", "Bernie Sanders", "Kamala Harris", "Beto O'Rourke", "Cory Booker",
            "Amy Klobuchar", "Elizabeth Warren", "John Hickenlooper", "Kirsten Gillibrand", 
            "John Delaney", "Julián Castro", "Bill DeBlasio", "Tulsi Gabbard", "Pete Buttigieg", 
            "Jay Inslee", "Tim Ryan", "Seth Moulton", "Eric Swalwell", "Andrew Yang", 
