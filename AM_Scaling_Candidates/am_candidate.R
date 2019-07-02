@@ -4,7 +4,7 @@ library(rstan)
 source(here::here("Style"))
 setwd(here::here("AM_Scaling"))
 
-load("CCES2018_OUTPUT.RData")
+load("CCES2018_OUTPUT.RData") ### Available from the CCES Dataverse
 df <- table
 ids <- df[,grep("CC18_334", names(df), value=T)]
 

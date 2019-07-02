@@ -13,6 +13,7 @@ Prior to making this repository I put the analysis for two other blogs in other 
 1. [MaxDiff Estimates of Candidate Support by Demographic Group](https://www.dataforprogress.org/blog/2019/6/17/a-better-measure-of-candidate-support-by-demographic-groups). [Code](MaxDiff_Candidates)
 2. [6 Apparent Political Clusters](https://wthh.dataforprogress.org/blog/2018/11/25/the-six-apparent-political-clusters). [Code](WTHH_Classes)
 3. [What do Voters Know?](https://www.dataforprogress.org/blog/2019/6/26/what-do-the-voters-know) [Code](What_Voters_Know)
+4. Aldrich-Mckelvey Scaling of Candidates (no blog) [Code](AM_Scaling)
 
 ## Packages used (generally)
 Most analysis is done in [RStan](https://github.com/stan-dev/stan) with plots made in [ggplot2](https://ggplot2.tidyverse.org/). In addition this repostiory uses [here](https://github.com/r-lib/here) to help with working directories. 
