@@ -4,4 +4,4 @@
 .Rproj.user
 *.csv
 .Rhistory
-.RData
+*.RData

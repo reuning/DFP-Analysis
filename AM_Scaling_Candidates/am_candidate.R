@@ -1,4 +1,9 @@
-setwd("/Users/kevinreuning/Dropbox/Projects/DFP/AM_Scaling/")
+library(ggplot2)
+library(rstan)
+
+source(here::here("Style"))
+setwd(here::here("AM_Scaling"))
+
 load("CCES2018_OUTPUT.RData")
 df <- table
 ids <- df[,grep("CC18_334", names(df), value=T)]
@@ -99,7 +104,6 @@ J <- length(sub_names)
 N <- max(vid)
 r_N <- length(Y)
 
-library(rstan)
 mod <- stan(file="A_M.stan", cores=2, chains=2)
 # mod <- vb(model)
 
@@ -111,10 +115,16 @@ mod <- stan(file="A_M.stan", cores=2, chains=2)
 tmp <- stan_plot(mod, "theta")
 tmp <- tmp$data
 tmp$params <- sub_names
-library(ggplot2)
+
+png("AM_Scaling.png", height=6, width=6, units='in', 
+    res=200)
 ggplot(tmp, aes(x=reorder(params, m), y=m, ymin=ll, ymax=hh)) +
   geom_pointrange() + coord_flip() +
-  theme_minimal()
+  # theme_dfp() +
+  # ggtitle_dfp("Aldrich-Mckelvey Scaling of Candidates") +
+  labs(y="Ideology", x="",
+       caption = 'Aldrich-Mckelvey Scaling using CCES 2018 Candidate Placements\nTrump, Democratic Party, Republican Party and Supreme Court used to bridge.')
+dev.off()
 
 raw <- by(Y, rid, mean)
 
