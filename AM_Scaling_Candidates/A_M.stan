@@ -1,14 +1,15 @@
 data {
   int N; //Number of surveyors
   int J; //number of unique elected
-
+  int s_N; //Number of self scores
 
   int r_N; //number of elected scores
   int Y[r_N]; //elected scores
   int vid[r_N]; //elected score id
   int rid[r_N]; //ID of the elected (for cases when multiple papers are scored)
 
-  // vector[J+7] theta_mu;
+  int Y_self[s_N];
+  int vid_self[s_N];
 }
 
 
@@ -28,6 +29,7 @@ parameters {
   //vector<lower=0>[8] tau_paper;
 
   vector[J] theta;
+  vector[s_N] theta_self;
   //real<lower=0> v;
   //real<lower=0> w;
 
@@ -51,6 +53,6 @@ model {
 
 
   Y ~ ordered_logistic(beta[vid] .* theta[rid] + alpha[vid], cut_mu);
-
+  Y_self ~ ordered_logistic(beta[vid_self] .* theta_self + alpha[vid_self], cut_mu);
 
 }
