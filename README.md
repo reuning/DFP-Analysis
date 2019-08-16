@@ -14,6 +14,7 @@ Prior to making this repository I put the analysis for two other blogs in other 
 2. [6 Apparent Political Clusters](https://wthh.dataforprogress.org/blog/2018/11/25/the-six-apparent-political-clusters). [Code](WTHH_Classes)
 3. [What do Voters Know?](https://www.dataforprogress.org/blog/2019/6/26/what-do-the-voters-know) [Code](What_Voters_Know)
 4. [Perceptions of Candidate Ideology Using Aldrich-Mckelvey Scaling](https://www.dataforprogress.org/blog/2019/7/4/perceptions-of-candidate-ideology) [Code](AM_Scaling)
+5. [How Activists View the 2020 Race](https://www.dataforprogress.org/blog/2019/7/31/how-activists-view-the-2020-race) [Code](Activists_2020)
 
 ## Packages used (generally)
 Most analysis is done in [RStan](https://github.com/stan-dev/stan) with plots made in [ggplot2](https://ggplot2.tidyverse.org/). In addition this repostiory uses [here](https://github.com/r-lib/here) to help with working directories. 

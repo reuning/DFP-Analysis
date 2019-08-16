@@ -1,7 +1,7 @@
 library(ggplot2)
 
 source(here::here("Style"))
-setwd(here::here("WTHH_Classes"))
+setwd(here::here("What_Voters_Know"))
 
 
 df <- read.csv("http://filesforprogress.org/datasets/june_19_omni/dfp_RV_omni_062019.csv")
